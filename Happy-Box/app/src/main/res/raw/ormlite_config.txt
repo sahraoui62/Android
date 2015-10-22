@@ -1,0 +1,95 @@
+# --table-start--
+dataClass=com.iagl.slimane.final_project.datasources.Person
+tableName=person
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=firstname
+# --field-end--
+# --field-start--
+fieldName=lastname
+# --field-end--
+# --field-start--
+fieldName=address
+# --field-end--
+# --field-start--
+fieldName=phone_number
+# --field-end--
+# --field-start--
+fieldName=password
+# --field-end--
+# --field-start--
+fieldName=username
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+
+#################################
+# --table-start--
+dataClass=com.iagl.slimane.final_project.datasources.Profile
+tableName=profile
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=person
+columnName=person_id
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=transaction_activated
+# --field-end--
+# --field-start--
+fieldName=raduis
+# --field-end--
+# --field-start--
+fieldName=url_picture
+# --field-end--
+# --field-start--
+fieldName=bio
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+
+#################################
+# --table-start--
+dataClass=com.iagl.slimane.final_project.datasources.Transaction
+tableName=transactions
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=person
+foreign=true
+columnName=person_id
+# --field-end--
+# --field-start--
+fieldName=title
+# --field-end--
+# --field-start--
+fieldName=description
+# --field-end--
+# --field-start--
+fieldName=address_from
+# --field-end--
+# --field-start--
+fieldName=address_to
+# --field-end--
+# --field-start--
+fieldName=price
+# --field-end--
+# --field-start--
+fieldName=state
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

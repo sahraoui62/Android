@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    android:background="@drawable/beige"
+    android:id="@+id/back">
+    <!-- android:id="@+id/" -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"></LinearLayout>
+
+        <ImageView
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/carton_smiley"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:text="Happy Box"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Facilitez vos déménagements"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:paddingTop="@dimen/abc_action_bar_stacked_max_height"
+        android:layout_weight="0.99"
+        android:typeface="sans"
+        android:fontFamily="sans-serif-thin"
+        android:textIsSelectable="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="126dp"
+        android:weightSum="1">
+
+        <!--<ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:src="@drawable/next_icon"
+            android:clickable="true"
+            android:scaleType="fitEnd"
+            android:background="#00000000"
+            android:paddingTop="@dimen/abc_action_bar_progress_bar_size" />
+          -->
+    </LinearLayout>
+
+</LinearLayout>
