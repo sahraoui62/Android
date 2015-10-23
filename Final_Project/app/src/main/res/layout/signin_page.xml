@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/beige"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView9"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/signin"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:id="@+id/textView12"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablerow3"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView6"
+            android:src="@drawable/username"
+            android:nestedScrollingEnabled="false"
+            android:longClickable="false"
+            android:layout_marginLeft="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/signin_username"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000000"
+            android:paddingTop="30dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablerow1"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            android:src="@drawable/password" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/signin_password"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000000"
+            android:paddingTop="30dp" />
+    </TableRow>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:id="@+id/b_signin_connection"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:layout_marginTop="80dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pas de compte"
+        android:id="@+id/b_signin_signup"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp" />
+</LinearLayout>
