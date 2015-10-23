@@ -95,7 +95,7 @@ public class ShowMyAdvert extends Activity {
                                     transactiondao.delete(t);
                                     Toast.makeText(ShowMyAdvert.this, "L'annonce a bien été supprimée.", Toast.LENGTH_SHORT).show();
                                     ((StableArrayAdapter) listview.getAdapter()).notifyDataSetChanged();
-                                    Intent intent = new Intent(ShowMyAdvert.this, SignIn.class);
+                                    Intent intent = new Intent(ShowMyAdvert.this, ShowMyAdvert.class);
                                     startActivity(intent);
                                 } catch (SQLException e) {
                                     e.printStackTrace();
